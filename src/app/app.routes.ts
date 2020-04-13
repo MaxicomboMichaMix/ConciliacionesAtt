@@ -6,8 +6,6 @@ import { AmarilloComponent } from './components/amarillo/amarillo.component';
 import { NaranjaComponent } from './components/naranja/naranja.component';
 
 
-
-
 const APP_ROUTES: Routes = [
 {path: 'home', component: HomeComponent},
 {path: 'menu', component: MenuComponent},

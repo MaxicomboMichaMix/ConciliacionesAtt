@@ -13,7 +13,8 @@ import { AmarilloComponent } from './components/amarillo/amarillo.component';
 import { RojoComponent } from './components/rojo/rojo.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { NaranjaComponent } from './components/naranja/naranja.component';
-
+import { GoogleChartComponent } from './components/google-chart/google-chart.component';
+import { GoogleChartsModule } from 'angular-google-charts';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,11 +23,13 @@ import { NaranjaComponent } from './components/naranja/naranja.component';
     AmarilloComponent,
     RojoComponent,
     MenuComponent,
-    NaranjaComponent
+    NaranjaComponent,
+    GoogleChartComponent
   ],
   imports: [
     BrowserModule,
-    APP_ROUTING
+    APP_ROUTING,
+    GoogleChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
