@@ -22,7 +22,9 @@ export class GoogleChartComponent implements OnInit {
      ['Others', 0.7] 
   ];
   columnNames = ['Browser', 'Percentage'];
-  options = {    
+  options = { 
+    pieHole: 0.7,
+   
   };
   width = 550;
   height = 400;
