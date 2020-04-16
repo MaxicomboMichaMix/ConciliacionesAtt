@@ -1,6 +1,9 @@
 <div class="container">
     <div class="card-columns">
-        <app-card *ngFor="let card of cards">
-        </app-card>
+        <div *ngFor="let card of cards">
+            <app-card [title]="card.title" [type]="card.type" [data]="card.data" [columnNames]="card.columnNames" [options]="card.options" [width]="card.width" [height]="card.height">
+            </app-card>
+
+        </div>
     </div>
 </div>

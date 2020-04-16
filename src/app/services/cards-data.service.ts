@@ -35,7 +35,22 @@ export class CardsDataService {
    },
     width : 400,
     height : 400
+  },
+  {
+    title :'Titulo 2',
+    type : 'PieChart',
+    data : [
+     ['Opera', 6.2],
+     ['Others', 0.7] 
+    ],
+    columnNames : ['Browser', 'Percentage'],
+    options : { 
+    pieHole: 0.7
+   },
+    width : 400,
+    height : 400
   }
+  
 ]
   constructor() { 
 

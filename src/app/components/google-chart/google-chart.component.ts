@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { GoogleChartsModule } from 'angular-google-charts';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -12,6 +12,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 export class GoogleChartComponent implements OnInit {
   
+  @Input() title:string;
+  @Input() type:string;
+  @Input() data:any[];
+  @Input() columnNames:any[];
+  @Input() options:any[];
+  @Input() width:any[];
+  @Input() height:any[];
+
   constructor() { 
     
   }
