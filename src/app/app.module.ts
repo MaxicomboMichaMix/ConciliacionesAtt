@@ -15,6 +15,7 @@ import { MenuComponent } from './components/menu/menu.component';
 import { NaranjaComponent } from './components/naranja/naranja.component';
 import { GoogleChartComponent } from './components/google-chart/google-chart.component';
 import { GoogleChartsModule } from 'angular-google-charts';
+import { CardComponent } from './components/card/card.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +25,8 @@ import { GoogleChartsModule } from 'angular-google-charts';
     RojoComponent,
     MenuComponent,
     NaranjaComponent,
-    GoogleChartComponent
+    GoogleChartComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
