@@ -16,6 +16,7 @@ import { NaranjaComponent } from './components/naranja/naranja.component';
 import { GoogleChartComponent } from './components/google-chart/google-chart.component';
 import { GoogleChartsModule } from 'angular-google-charts';
 import { CardComponent } from './components/card/card.component';
+import {CardsDataService} from './services/cards-data.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +34,9 @@ import { CardComponent } from './components/card/card.component';
     APP_ROUTING,
     GoogleChartsModule
   ],
-  providers: [],
+  providers: [
+  CardsDataService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
