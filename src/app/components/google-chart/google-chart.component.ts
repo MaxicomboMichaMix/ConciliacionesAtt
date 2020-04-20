@@ -19,7 +19,6 @@ export class GoogleChartComponent implements OnInit {
   @Input() options:any[];
   @Input() width:any[];
   @Input() height:any[];
-
   constructor() { 
     
   }

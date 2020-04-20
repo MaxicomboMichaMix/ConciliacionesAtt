@@ -16,7 +16,7 @@ import {CardsDataService, charData} from '../../services/cards-data.service';
 export class RojoComponent implements OnInit {
   
   cards: charData[] = [];
-  
+  colors:['red','grey'];
   constructor(private _cardsService: CardsDataService) {
   
   }

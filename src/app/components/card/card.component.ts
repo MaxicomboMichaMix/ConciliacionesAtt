@@ -13,7 +13,7 @@ export class CardComponent implements OnInit {
   @Input() options:any[];
   @Input() width:any[];
   @Input() height:any[];
-
+  @Input() colors:any[];
 
   constructor() { }
 
