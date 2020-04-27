@@ -14,9 +14,11 @@ import { RojoComponent } from './components/rojo/rojo.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { NaranjaComponent } from './components/naranja/naranja.component';
 import { GoogleChartComponent } from './components/google-chart/google-chart.component';
+import { GChartHistogramaComponent } from './components/g-chart-histograma/g-chart-histograma.component';
 import { GoogleChartsModule } from 'angular-google-charts';
 import { CardComponent } from './components/card/card.component';
-import {CardsDataService} from './services/cards-data.service';
+import { CardsDataService} from './services/cards-data.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,6 +29,7 @@ import {CardsDataService} from './services/cards-data.service';
     MenuComponent,
     NaranjaComponent,
     GoogleChartComponent,
+    GChartHistogramaComponent,
     CardComponent
   ],
   imports: [

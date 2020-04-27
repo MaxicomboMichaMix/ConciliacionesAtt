@@ -5,7 +5,7 @@ import { GoogleChartComponent } from './google-chart.component';
 describe('GoogleChartComponent', () => {
   let component: GoogleChartComponent;
   let fixture: ComponentFixture<GoogleChartComponent>;
-
+  
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ GoogleChartComponent ]

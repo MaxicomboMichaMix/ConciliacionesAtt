@@ -4,7 +4,7 @@ import { MenuComponent } from './components/menu/menu.component';
 import { RojoComponent } from './components/rojo/rojo.component';
 import { AmarilloComponent } from './components/amarillo/amarillo.component';
 import { NaranjaComponent } from './components/naranja/naranja.component';
-
+import { GChartHistogramaComponent } from './components/g-chart-histograma/g-chart-histograma.component';
 
 const APP_ROUTES: Routes = [
 {path: 'home', component: HomeComponent},
@@ -12,7 +12,7 @@ const APP_ROUTES: Routes = [
 {path: 'rojo', component: RojoComponent},
 {path: 'amarillo', component: AmarilloComponent},
 {path: 'naranja', component: NaranjaComponent},
-
+{path: 'histograma', component: GChartHistogramaComponent},
 
 {path: '**', pathMatch: 'full', redirectTo: 'home'}
 
