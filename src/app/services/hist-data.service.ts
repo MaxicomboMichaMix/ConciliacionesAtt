@@ -18,45 +18,29 @@ export interface charData{
 export class HistDataService {
   constructor() { }
   private data: charData [] = [{
-    title :'Browser market 2014',
-    type : 'PieChart',
+    title :'Bill Cycle Acumlado por dia 2018',
+    type : 'Bar',
     data : [
-      ['No completado', 100-65],
-      ['Completado', 65] 
+      ['Abril 1,2018', 100000],
+      ['Abril 2,2018', 200000],
+      ['Abril 3,2018', 300000],
+      ['Abril 4,2018', 400000],
+      ['Abril 5,2018', 500000],
+      ['Abril 6,2018', 600000],
+      ['Abril 7,2018', 700000],
+      ['Abril 8,2018', 800000],
+      ['Abril 9,2018', 900000],
+      ['Abril 10,2018', 1000000],
+      ['Abril 11,2018', 1100000],
+      ['Abril 12,2018', 1200000],
     ],
-    columnNames : ['Browser', 'Percentage'],
+    columnNames : ['Fecha', 'Percentage'],
     options : { 
-      pieHole: 0.8,
-      colors:['transparent','red'],
-      legend: 'none',
-      pieSliceText: 'none',
-      pieSliceTextStyle: {
-        color: 'black',
-      },
+      colors:['green','red'],
     },
-    width : 340,
-    height : 400
-  },
-  {
-    title :'Ejemplo 1',
-    type : 'PieChart',
-    data : [
-      ['No completado', 100-75],
-      ['Completado', 75] 
-    ],
-    columnNames : ['Browser', 'Percentage'],
-    options : { 
-      pieHole: 0.8,
-      colors:['transparent','red'],
-      legend: 'none',
-      pieSliceText: 'none',
-      pieSliceTextStyle: {
-        color: 'black',
-      },
-    },
-    width : 340,
-    height : 400
-  },
+    width : 1400,
+    height : 500
+  }
   ]
   getData(){
     return this.data;

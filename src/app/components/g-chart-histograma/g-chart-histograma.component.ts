@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HistDataService, charData} from '../../services/hist-data.service';
 
 @Component({
   selector: 'app-g-chart-histograma',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GChartHistogramaComponent implements OnInit {
 
-  constructor() { }
+  data: charData[] = [];
+  constructor(private _histData: HistDataService) { }
 
   ngOnInit(): void {
+    this.data = this._histData.getData();
   }
-
+  handler(evento){
+    if(evento){
+      console.log(evento[0].row)
+      alert('Se selecciono la columna: '+  evento[0].row);
+    }
+  }
 }
